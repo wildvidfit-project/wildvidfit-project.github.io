@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="WildVidFit">
+  <meta property="og:title" content="WildVidFit"/>
+  <meta property="og:description" content="WildVidFit: Video Virtual Try-On in the Wild via Image-Based Controlled Diffusion Models"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image:width" content="2412"/>
+  <meta property="og:image:height" content="1394"/>
+
+  <!-- title of label -->
+  <title>WildVidFit</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- Paper name -->
+
+            <h1 class="title is-1 publication-title">WildVidFit</h1>
+            <h1 class="title is-2 publication-title">Video Virtual Try-On in the Wild via Image-Based Controlled Diffusion Models</h1>
+            
+            <!-- Paper authors -->
+            
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="" target="_blank">Author 1</a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Author 2</a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Author 3</a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Author 4</a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Author 5</a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Author 6</a>
+              </span>
+            </div> -->
+
+                  <!-- Institution -->
+                  
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution name</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links"> -->
+
+
+                      <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="paper link" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                        </a>
+                      </span> -->
+
+                  
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="link" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="link" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- a video -->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        Your video here
+        <source src="static/videos/??.mp4"
+        type="video/mp4">
+      </video>
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End a video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Video virtual try-on aims to generate realistic sequences that maintain garment identity and adapt to a person's pose and body shape in source videos. Traditional image-based methods, relying on warping and blending, struggle with complex human movements and occlusions, limiting their effectiveness in video try-on applications. Moreover, video-based models require extensive, high-quality data and substantial computational resources. To tackle these issues, we reconceptualize video try-on as a process of generating videos conditioned on garment descriptions and human motion. Our solution, WildVidFit, employs image-based controlled diffusion models for a streamlined, one-stage approach. This model, conditioned on specific garments and individuals, is trained on still images rather than videos. It leverages diffusion guidance from pre-trained models including a video masked autoencdoer for segment smoothness improvement and a self-supervised model for feature alignment of adjacent frame in the latent space. This integration markedly boosts the model's ability to maintain temporal coherence, enabling more effective video try-on within an image-based framework. Our experiments on the VITON-HD and DressCode datasets, along with tests on the VVT and TikTok datasets, demonstrate WildVidFit's capability to generate fluid and coherent videos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<!-- Pipeline -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">WildVidFit Framework</h2>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/pipeline.png"/>
+        <p>
+          <strong>Overview of our WildVidFit framework.</strong> Our method contains two modules, i.e., a one-stage image try-on network and a guidance module. In timestep \( t\), we crop the garment area and decode the latent \(Z_t\) into sequence \(\mathbf{I_t}\). Between adjacent frames \(I^{j+1}_t\) and \(I^j_t\), the similarity loss \(L_{SIM}\) is calculated using cosine distance. Additionally, we randomly mask the sequence \(\mathbf{I_t}\) into \(\hat{\mathbf{I}}_t\), which is then inputted into VideoMAE for reconstruction. \(L_{MAE}\) represents the distance between the sequences \(\mathbf{I_t}\) and \(\hat{\mathbf{I}}_t\). We assume that a lower reconstruction loss will result in a smoother sequence. \(L_{SIM}\) and \(L_{MAE}\) together constitute the temporal loss, which controls the sampling process from \(Z_t\) to \(Z_{t-1}\).
+        </p>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Pipeline -->
+
+<!-- one-stage image try-on network -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">One-stage Image Try-on Network</h2>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/one_stage.png"/>
+        <p>
+          <strong>Overview of the proposed one-stage image try-on network.</strong> First, we extract the person representation and garment representation during preprocessing. The person representation includes the cloth-agnostic image \(A\) and the human pose \(P\) while the garment representation includes the garment image \(G\) and the edge map \(E_g\). Then two representations condition the diffusion model in the way of hierarchical fusion in UNet decoder and cross attention respectively.
+        </p>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End one-stage image try-on network -->
+
+<!-- mathjax -->
+<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- Qualitative comparison on the TikTok dataset -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Comparison on the TikTok Dataset</h2>
+      <!-- <h2 class="title is-4">Qualitative comparison on the TikTok dataset</h2> -->
+      
+        <div class="item tiktok-video">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/tiktok_0.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item tiktok-video">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/tiktok_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Qualitative comparison on the TikTok dataset -->
+
+
+<!-- Video Virtual try-on results on real-life TikTok videos -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Virtual Try-on Results on Real-life TikTok Videos</h2>
+      <div id="results-carousel22" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_202_44.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_102_130.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/output_267_44.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/output_128_102.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div id="results-carousel22" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_159_167.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_134_138.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/output_57_124.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/102_321.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Virtual try-on results on real-life TikTok videos -->
+
+
+<!-- Cross-dataset video try-on results -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Cross-dataset Video Try-on Results</h2>
+        <div class="item item-video0">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_267_000098.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video0">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_335_07421.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Cross-dataset video try-on results -->
+
+
+<!-- Qualitative comparison on the VVT dataset -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Comparison on the VVT Dtaset</h2>
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_0.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/output_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Qualitative comparison on the VVT dataset -->
+
+
+<!-- Qualitative comparison on VITON-HD dataset -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Comparison on the VITON-HD Dataset</h2>
+      <div class="item-img1">
+        <!-- Your image here -->
+        <img src="static/images/viton_result.png"/>
+     </div>
+    </div>
+  </div>
+</section>
+<!-- End Qualitative comparison on VITON-HD dataset -->
+
+
+<!-- Qualitative comparison on DressCode dataset -->
+<section class="hero is-small is-light">
+  <div class="hero-body" style=" padding-top: 30px;">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Comparison on the DressCode Dataset</h2>
+      <div class="item-img1">
+        <!-- Your image here -->
+        <img src="static/images/dress.png"/>
+     </div>
+    </div>
+  </div>
+</section>
+<!-- End Qualitative comparison on DressCode dataset -->
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTeX
+</code></pre>
+  </div>
+</section> -->
+
+
+<script>
+bulmaCarousel.attach('#results-carousel11', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel22', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel33', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true,
+    autoplay: false,
+});
+</script>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
